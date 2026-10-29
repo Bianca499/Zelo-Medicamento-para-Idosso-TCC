@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça o ZELO, um projeto para ajudar idosos, familiares e cuidadores a organizar a rotina de medicamentos.">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>ZELO | Cuidado e organização de medicamentos</title>
+
+    <link rel="stylesheet" href="script.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo-container">
+        <img src="Component 1.png" alt="Logo ZELO" class="logo-img">
+    </div>
+
+    <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Abrir menu"
+        aria-expanded="false">
+        ☰
+    </button>
+
+    <nav class="nav" id="nav">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#contato" class="nav-button">Contato</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <!-- INÍCIO -->
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+
+            <h1>
+                Mais tranquilidade para <span> cuidar </span>de quem você
+               
+                <span>ama.</span>
+            </h1>
+
+            <p>
+                Um sistema pensado para ajudar idosos e cuidadores
+                a organizar os horários dos medicamentos e tornar
+                a rotina de cuidados mais simples.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#sobre" class="btn btn-primary">
+                    Conheça o projeto ↗
+                </a>
+
+                <a href="#funcionalidades" class="btn btn-outline">
+                    Saiba mais
+                </a>
+            </div>
+
+            <div class="hero-points">
+                <span>✓ Mais organização</span>
+                <span>✓ Mais tranquilidade</span>
+            </div>
+
+        </div>
+
+        <div class="hero-visual">
+
+            <img
+                src="imagems de quem cuida do idoso.avif"
+                alt="Profissional cuidando de uma pessoa idosa">
+
+            <div class="floating-card">
+                <div class="floating-icon">♡</div>
+
+                <div>
+                    <strong>Cuidado em primeiro lugar</strong>
+                    <p>Idosos e cuidadores conectados.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SOBRE O PROJETO -->
+    <section class="sobre section" id="sobre">
+
+        <div class="sobre-image">
+            <img
+                src="Apoio na medicação de idosos e cuidados.png"
+                alt="Cuidador ajudando uma pessoa idosa com seus medicamentos">
+        </div>
+
+        <div class="sobre-content">
+
+            <h2>Sobre nós.</h2>
+
+            <p>
+                Somos uma iniciativa nascida no ambiente acadêmico,
+                impulsionada pelo desejo de transformar o cuidado
+                e a gestão da saúde de pessoas idosas por meio
+                da tecnologia.
+            </p>
+
+            <p>
+                Nosso projeto foi idealizado ao identificarmos os
+                desafios diários enfrentados por familiares e
+                cuidadores para acompanhar a rotina de medicamentos,
+                consultas e o bem-estar de quem amam.
+            </p>
+
+            <a href="#funcionalidades" class="text-link">
+                Conheça as funcionalidades →
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- DOWNLOAD DO APLICATIVO -->
+    <section class="app-banner" id="download">
+        <div class="app-banner-copy">
+            <h1>Cuide de Quem Você Ama<br>com Segurança</h1>
+            <p>
+                Baixar o nosso aplicativo garante a tranquilidade de acompanhar
+                a rotina de saúde de quem você ama de onde estiver.
+            </p>
+        </div>
+
+        <div class="app-banner-download">
+            <img src="Component 1.png" alt="Logo ZELO">
+
+            <div class="store-links">
+                <a
+                    class="store-badge google-play"
+                    href="https://play.google.com/store"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Encontre aplicativos no Google Play">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="#34a853" d="M3 2.8v18.4L13.5 12z"/>
+                        <path fill="#4285f4" d="m3 2.8 13 7.3-2.5 1.9z"/>
+                        <path fill="#fbbc04" d="m13.5 12 2.5 1.9-13 7.3z"/>
+                        <path fill="#ea4335" d="m16 10.1 3.5 2-3.5 1.8-2.5-1.9z"/>
+                    </svg>
+                    <span><small>Disponível no</small>Google Play</span>
+                </a>
+
+                <a
+                    class="store-badge app-store"
+                    href="https://www.apple.com/app-store/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visite a App Store">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor" d="M16.4 12.8c0-2 1.6-3 1.7-3.1a3.7 3.7 0 0 0-2.9-1.6c-1.2-.1-2.3.7-2.9.7-.6 0-1.5-.7-2.5-.7a3.8 3.8 0 0 0-3.2 2c-1.4 2.4-.4 6 1 8 .7 1 1.4 2 2.4 2s1.3-.6 2.5-.6 1.6.6 2.6.6 1.6-1 2.2-2a9 9 0 0 0 1-2.1 3.3 3.3 0 0 1-1.9-3.2ZM14.5 6.8a3.6 3.6 0 0 0 .8-2.6 3.7 3.7 0 0 0-2.4 1.2 3.4 3.4 0 0 0-.8 2.5 3 3 0 0 0 2.4-1.1Z"/>
+                    </svg>
+                    <span><small>Disponível na</small>App Store</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+
+
+    <!-- FUNCIONALIDADES -->
+    <section class="section features" id="funcionalidades">
+
+        <div class="section-heading">
+            <h2>Funcionalidades do sistema</h2>
+
+            <p>
+                Recursos pensados para ajudar na rotina de cuidados.
+            </p>
+        </div>
+
+        <div class="feature-grid">
+
+            <article class="feature-card">
+                <div class="feature-icon">◷</div>
+
+                <h3>Lembretes de horários</h3>
+
+                <p>
+                    Ajuda a lembrar os horários dos medicamentos cadastrados.
+                </p>
+            </article>
+
+            <article class="feature-card featured">
+                <div class="feature-icon">▦</div>
+
+                <h3>Cadastro de medicamentos</h3>
+
+                <p>
+                    Organização das informações dos medicamentos
+                    e dos horários prescritos.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon">♡</div>
+
+                <h3>Acompanhamento</h3>
+
+                <p>
+                    Facilita o acompanhamento da rotina pelo idoso
+                    e por seu cuidador.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section class="benefits section" id="beneficios">
+
+        <div class="benefits-content">
+
+            
+            <h2>
+                Mais organização para uma rotina mais tranquila.
+            </h2>
+
+            <p>
+                A tecnologia pode ser uma grande aliada na
+                organização dos cuidados diários, aproximando
+                idosos, familiares e cuidadores.
+            </p>
+
+            <ul class="benefit-list">
+                <li><span>✓</span> Organização dos horários</li>
+                <li><span>✓</span> Informações reunidas em um só lugar</li>
+                <li><span>✓</span> Apoio aos familiares e cuidadores</li>
+                <li><span>✓</span> Mais praticidade na rotina</li>
+            </ul>
+
+            <a href="#contato" class="btn btn-primary">
+                Fale com a gente ↗
+            </a>
+
+        </div>
+
+        <div class="benefits-image">
+
+            <img
+                src="imagem.jpg"
+                alt="Pessoa recebendo apoio e cuidado">
+
+            <div class="image-caption">
+                <span>♡</span>
+
+                <div>
+                    <strong>Cuidado com carinho</strong>
+                    <p>Tecnologia a favor do bem-estar.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- OBJETIVOS DO PROJETO -->
+    <section class="section testimonials">
+
+        <div class="section-heading">
+            <h2>Cuidado que faz a diferença</h2>
+
+            <p>
+                Nosso objetivo é oferecer apoio para uma rotina
+                de cuidados mais organizada.
+            </p>
+        </div>
+
+        <div class="testimonial-grid">
+
+            <article class="testimonial">
+                <div class="quote-icon"></div>
+
+                <p>
+                    Uma proposta que busca tornar a organização
+                    dos medicamentos mais simples para as famílias.
+                </p>
+
+                <strong>Mais organização</strong>
+                <span>Um objetivo do projeto</span>
+            </article>
+
+            <article class="testimonial">
+                <div class="quote-icon">♡</div>
+
+                <p>
+                    O sistema foi pensado para aproximar idosos
+                    e cuidadores por meio de informações organizadas.
+                </p>
+
+                <strong>Mais conexão</strong>
+                <span>Um propósito do ZELO</span>
+            </article>
+
+            <article class="testimonial">
+                <div class="quote-icon">✚</div>
+
+                <p>
+                    Uma ideia que utiliza a tecnologia como apoio
+                    à rotina de cuidados com os idosos.
+                </p>
+
+                <strong>Mais praticidade</strong>
+                <span>Uma proposta de cuidado</span>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- PERGUNTAS FREQUENTES -->
+    <section class="section faq" id="faq">
+
+        <div class="section-heading">
+            <h2>Perguntas frequentes</h2>
+
+            <p>
+                Saiba mais sobre a proposta do nosso sistema.
+            </p>
+        </div>
+
+        <div class="faq-list">
+
+            <details>
+                <summary>Para quem o sistema foi desenvolvido?</summary>
+
+                <p>
+                    Para apoiar idosos, familiares e cuidadores
+                    na organização da rotina de medicamentos.
+                </p>
+            </details>
+
+            <details>
+                <summary>O sistema pode ajudar com os horários?</summary>
+
+                <p>
+                    A proposta inclui lembretes dos horários
+                    cadastrados, conforme os recursos implementados.
+                </p>
+            </details>
+
+            <details>
+                <summary>É possível cadastrar medicamentos?</summary>
+
+                <p>
+                    O projeto prevê o registro das informações
+                    dos medicamentos e dos horários orientados
+                    pelo profissional de saúde.
+                </p>
+            </details>
+
+            <details>
+                <summary>O sistema substitui um médico ou farmacêutico?</summary>
+
+                <p>
+                    Não. O sistema é uma ferramenta de apoio à
+                    organização e não substitui orientações
+                    profissionais. Nunca altere doses ou horários
+                    sem orientação adequada.
+                </p>
+            </details>
+
+        </div>
+
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contact section" id="contato">
+
+        <div class="contact-content">
+
+            <h2>Conheça melhor o nosso projeto.</h2>
+
+            <p>
+                Ficou com alguma dúvida ou quer saber mais
+                sobre a proposta? Envie sua mensagem pelo formulário.
+            </p>
+
+            <div class="contact-note">
+                <span>♡</span>
+
+                <p>
+                    Mais cuidado, organização e apoio para idosos
+                    e cuidadores.
+                </p>
+            </div>
+
+        </div>
+
+        <form class="contact-form" id="contactForm">
+
+            <h3>Envie sua mensagem</h3>
+
+            <label for="nome">Nome completo</label>
+            <input
+                type="text"
+                id="nome"
+                placeholder="Digite seu nome"
+                required>
+
+            <label for="email">E-mail</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="seuemail@exemplo.com"
+                required>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea
+                id="mensagem"
+                rows="4"
+                placeholder="Escreva sua mensagem..."
+                required></textarea>
+
+            <button class="btn btn-primary submit-button" type="submit">
+                Enviar mensagem ↗
+            </button>
+
+            <p id="feedback" role="status" aria-live="polite"></p>
+
+        </form>
+
+    </section>
+
+</main>
+
+<!-- RODAPÉ -->
+<footer class="footer">
+
+    <div class="footer-brand">
+        <img src="Component 1.png" alt="Logo ZELO" class="footer-logo-img">
+    </div>
+
+    <p>
+        Cuidado, tecnologia e conexão para idosos e cuidadores.
+    </p>
+
+    <p class="footer-small">
+        © 2026 ZELO — Projeto acadêmico de divulgação.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

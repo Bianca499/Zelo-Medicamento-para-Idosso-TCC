@@ -1,0 +1,936 @@
+:root {
+    --verde: #00f092;
+    --verde-escuro: #99dff9;
+    --verde-claro: #e7f7f1;
+    --azul: #183e56;
+    --texto: #536575;
+    --fundo: #f5faf8;
+    --branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 95px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--texto);
+    background: white;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+/* CABEÇALHO */
+
+.header {
+    min-height: 80px;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 20px #183e560b;
+}
+
+/* LOGO ZELO */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    flex-shrink: 0;
+}
+
+.logo-img {
+    width: 100px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+}
+
+.logo {
+    font-size: 100px;
+    font-weight: 700;
+    color: var(--azul);
+    letter-spacing: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+.logo span {
+    color: var(--verde);
+}
+
+/* MENU */
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.nav a {
+    transition: 0.2s;
+}
+
+.nav a:hover {
+    color: var(--verde);
+}
+
+.nav .nav-button {
+    background: #35a9dc;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+.nav .nav-button:hover {
+    background: #228bb9;
+}
+
+.menu-toggle {
+    display: none;
+    background: var(--verde-claro);
+    border: none;
+    padding: 7px 12px;
+    border-radius: 8px;
+    font-size: 22px;
+    color: var(--azul);
+    cursor: pointer;
+}
+
+/* INÍCIO */
+
+.hero {
+    padding: 75px 9%;
+    min-height: 520px;
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+    background: linear-gradient(120deg, #effaf6, #ffffff 75%);
+}
+
+/* FOTO COMO FUNDO DA TELA INICIAL */
+
+.hero {
+    position: relative;
+    grid-template-columns: 1fr;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.88) 0%,
+            rgba(255, 255, 255, 0.65) 45%,
+            rgba(255, 255, 255, 0.15) 100%
+        ),
+        url("cuidador-de-idosos-3b.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+}
+
+/* ESCONDE A IMAGEM LATERAL ANTIGA */
+
+.hero-visual {
+    display: none;
+}
+
+.tag {
+    display: inline-block;
+    color: var(--verde-escuro);
+    background: var(--verde-claro);
+    padding: 6px 13px;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    color: var(--azul);
+    font-size: clamp(34px, 4vw, 49px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #99DFF9;
+    -webkit-text-stroke: 4px #9cc4d3;
+    
+}
+
+.hero-content > p,
+.sobre-content > p,
+.benefits-content > p,
+.contact-content > p {
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 19px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.25s;
+}
+
+.btn-primary {
+    background: #228bb9;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #228bb9;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    color: var(--branco); /* Cor da escrita  */
+    border-color: #99DFF9; /* cor da borda  */
+    background: #99DFF9; /* cor do fundo  */
+}
+
+.btn-outline:hover {
+    background: var(--verde-claro);
+}
+
+.hero-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 25px;
+    color: var(--azul);
+    font-size: 10px;
+}
+
+.hero-points span::first-letter {
+    color: var(--verde);
+}
+
+.hero-visual,
+.benefits-image {
+    position: relative;
+}
+
+.hero-visual > img {
+    width: 100%;
+    height: 375px;
+    object-fit: cover;
+    display: block;
+    border-radius: 24px 24px 65px 24px;
+    box-shadow: 0 20px 45px #183e5618;
+}
+
+.floating-card {
+    position: absolute;
+    bottom: 20px;
+    left: -25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 285px;
+    padding: 15px;
+    background: white;
+    border-radius: 13px;
+    box-shadow: 0 10px 35px #183e5618;
+}
+
+.floating-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--verde);
+    background: var(--verde-claro);
+    font-size: 25px;
+}
+
+.floating-card strong {
+    color: var(--azul);
+    font-size: 11px;
+}
+
+.floating-card p {
+    font-size: 10px;
+}
+
+.section {
+    padding: 80px 9%;
+}
+
+/* SOBRE E BENEFÍCIOS */
+
+.sobre,
+.benefits {
+    display: grid;
+    grid-template-columns: 0.9fr 1fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.sobre-image img,
+.benefits-image > img {
+    width: 100%;
+    height: 345px;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
+h2 {
+    color: var(--azul);
+    font-size: clamp(27px, 3vw, 35px);
+    line-height: 1.3;
+    margin-bottom: 17px;
+}
+
+.text-link {
+    color: var(--verde-escuro);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+/* FUNCIONALIDADES */
+
+.features,
+.testimonials {
+    background: var(--fundo);
+}
+
+.section-heading {
+    max-width: 650px;
+    text-align: center;
+    margin: 0 auto 40px;
+}
+
+.section-heading .tag {
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    margin-bottom: 10px;
+}
+
+.section-heading > p {
+    font-size: 12px;
+}
+
+.feature-grid,
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.feature-card {
+    background: white;
+    padding: 28px 24px;
+    border: 1px solid #e2eee9;
+    border-radius: 15px;
+    transition: 0.25s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px #183e5610;
+}
+
+.feature-card.featured {
+    background: #edfaf5;
+    border-color: #b8e5d5;
+}
+
+.feature-icon {
+    display: grid;
+    place-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: var(--verde-claro);
+    color: var(--verde-escuro);
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: var(--azul);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 12px;
+}
+
+/* BENEFÍCIOS */
+
+.benefit-list {
+    list-style: none;
+    margin: 20px 0 25px;
+}
+
+.benefit-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 12px;
+}
+
+.benefit-list li span {
+    display: grid;
+    place-items: center;
+    width: 23px;
+    height: 23px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    color: var(--verde-escuro);
+    background: var(--verde-claro);
+    font-weight: 700;
+}
+
+.benefits-image > img {
+    height: 370px;
+}
+
+.image-caption {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    background: white;
+    border-radius: 12px;
+    padding: 13px;
+}
+
+.image-caption > span {
+    font-size: 26px;
+    color: var(--verde);
+}
+
+.image-caption strong {
+    display: block;
+    color: var(--azul);
+    font-size: 12px;
+}
+
+.image-caption p {
+    font-size: 10px;
+}
+
+/* DEPOIMENTOS E OBJETIVOS */
+
+.testimonial {
+    background: white;
+    border: 1px solid #e3ede8;
+    border-radius: 14px;
+    padding: 24px;
+}
+
+.quote-icon {
+    color: var(--verde);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.testimonial > p {
+    font-size: 12px;
+    min-height: 75px;
+    margin-bottom: 18px;
+}
+
+.testimonial strong,
+.testimonial > span {
+    display: block;
+}
+
+.testimonial strong {
+    color: var(--azul);
+    font-size: 12px;
+}
+
+.testimonial > span {
+    font-size: 10px;
+}
+
+/* PERGUNTAS FREQUENTES */
+
+.faq {
+    max-width: 1050px;
+    margin: auto;
+}
+
+.faq-list {
+    max-width: 760px;
+    margin: auto;
+}
+
+.faq-list details {
+    background: white;
+    border: 1px solid #e0ebe6;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.faq-list summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 17px 20px;
+    cursor: pointer;
+    color: var(--azul);
+    font-size: 12px;
+    font-weight: 600;
+    list-style: none;
+}
+
+.faq-list summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-list summary::after {
+    content: "+";
+    color: var(--verde);
+    font-size: 22px;
+}
+
+.faq-list details[open] summary::after {
+    content: "−";
+}
+
+.faq-list details > p {
+    padding: 0 20px 18px;
+    font-size: 12px;
+}
+
+/* CONTATO */
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    background: #eff9f5;
+}
+
+.contact-note {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+    color: var(--verde-escuro);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.contact-note span {
+    font-size: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 10px 35px #183e560a;
+}
+
+.contact-form h3 {
+    color: var(--azul);
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--azul);
+    margin: 10px 0 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dce8e2;
+    background: #fcfefd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 12px;
+    color: var(--texto);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--verde);
+    box-shadow: 0 0 0 3px #159b8018;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    margin-top:18px;
+    background-color:#2988e2;
+    color:white;
+    border:none;
+}
+
+#feedback {
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+/* RODAPÉ */
+
+.footer {
+    padding: 35px 20px;
+    text-align: center;
+    background: #153b50;
+    color: #dcebef;
+}
+
+.footer-logo {
+    color: white;
+}
+
+.footer > p {
+    font-size: 11px;
+    margin-top: 8px;
+}
+
+.footer .footer-small {
+    margin-top: 18px;
+    color: #a9c4ce;
+    font-size: 10px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+    .header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .nav {
+        gap: 12px;
+        font-size: 10px;
+    }
+
+    .hero,
+    .section {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .hero,
+    .sobre,
+    .benefits,
+    .contact {
+        gap: 30px;
+    }
+
+    .feature-grid,
+    .testimonial-grid {
+        gap: 12px;
+    }
+
+    .feature-card,
+    .testimonial {
+        padding: 19px;
+    }
+}
+
+@media (max-width: 650px) {
+    .header {
+        min-height: 70px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        padding: 18px 6%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        background: white;
+        box-shadow: 0 12px 20px #183e5612;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    .nav a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .hero,
+    .sobre,
+    .benefits,
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 50px;
+        gap: 40px;
+        min-height: 520px;
+    }
+
+    .hero-visual > img {
+        height: 290px;
+    }
+
+    .floating-card {
+        left: 10px;
+        bottom: -18px;
+    }
+
+    .section {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .sobre-image img,
+    .benefits-image > img {
+        height: 270px;
+    }
+
+    .feature-grid,
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial > p {
+        min-height: 0;
+    }
+
+    .contact {
+        gap: 25px;
+    }
+
+    .contact-form {
+        padding: 21px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* MARCA DO RODAPÉ */
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+.footer-logo-img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(71%) sepia(90%) saturate(1170%) hue-rotate(94deg) brightness(101%) contrast(102%);
+}
+
+.footer-logo {
+    color: white;
+    font-size: 20px !important;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 !important;
+}
+
+@media (max-width: 650px) {
+    .logo-img {
+        width: 75px;
+        height: 55px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+}
+
+/* BANNER DO APLICATIVO */
+
+.app-banner {
+    min-height: 285px;
+    padding: 38px 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 28px;
+    background: linear-gradient(110deg, #e8faff, #d6f4fc);
+    border: 1px solid #d5edf4;
+}
+
+.app-banner-copy h1 {
+    margin: 0 0 24px;
+    color: #080b82;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1.35;
+}
+
+.app-banner-copy p {
+    max-width: 290px;
+    margin: 0 0 0 12px;
+    color: #111;
+    font-size: 15px;
+    line-height: 1.42;
+}
+
+.app-banner-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.app-banner-download > img {
+    display: block;
+    width: min(100%, 238px);
+    height: auto;
+}
+
+.store-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.store-badge {
+    width: 120px;
+    min-height: 38px;
+    padding: 5px 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 2px;
+    color: #111;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.05;
+    text-decoration: none;
+}
+
+.store-badge svg {
+    width: 22px;
+    height: 22px;
+    flex: 0 0 22px;
+}
+
+.store-badge span {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.store-badge small {
+    font-size: 8px;
+}
+
+.google-play {
+    background: #35a9dc;
+}
+
+.app-store {
+    background: #35a9dc;
+}
+
+@media (max-width: 560px) {
+    .app-banner {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 32px 24px;
+    }
+
+    .app-banner-copy h1 {
+        font-size: 22px;
+    }
+
+    .app-banner-copy p {
+        margin-left: 0;
+    }
+}
