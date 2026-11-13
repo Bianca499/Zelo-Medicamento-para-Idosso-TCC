@@ -51,6 +51,14 @@ textarea {
     z-index: 100;
     box-shadow: 0 3px 20px #183e560b;
 }
+.app{
+    background-color: #99dff9;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 30px;
+    margin-top: 30px;
+    color: #000;
+}
 
 /* LOGO ZELO */
 
@@ -843,6 +851,13 @@ h2 {
     gap: 28px;
     background: linear-gradient(110deg, #e8faff, #d6f4fc);
     border: 1px solid #d5edf4;
+}
+.app-banner-copy {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 25lvh;
 }
 
 .app-banner-copy h1 {
