@@ -846,13 +846,20 @@ h2 {
     min-height: 285px;
     padding: 38px 32px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     gap: 28px;
     background: linear-gradient(110deg, #e8faff, #d6f4fc);
     border: 1px solid #d5edf4;
 }
 .app-banner-copy {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 30lvh;
+}
+.app-banner-insalador{
     display: flex;
     align-items: center;
     flex-direction: column;
