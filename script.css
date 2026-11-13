@@ -51,6 +51,14 @@ textarea {
     z-index: 100;
     box-shadow: 0 3px 20px #183e560b;
 }
+.app{
+    background-color: #99dff9;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 30px;
+    margin-top: 30px;
+    color: #000;
+}
 
 /* LOGO ZELO */
 
@@ -838,11 +846,25 @@ h2 {
     min-height: 285px;
     padding: 38px 32px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     gap: 28px;
     background: linear-gradient(110deg, #e8faff, #d6f4fc);
     border: 1px solid #d5edf4;
+}
+.app-banner-copy {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 30lvh;
+}
+.app-banner-insalador{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 25lvh;
 }
 
 .app-banner-copy h1 {
@@ -877,18 +899,16 @@ h2 {
 .store-links {
     display: flex;
     justify-content: center;
-    width: 100%;
-    gap: 16px;
+    gap: 24px;
 }
 
 .store-badge {
-    flex: 1 1 0;
-    max-width: 180px;
-    min-height: 50px;
-    padding: 8px 12px;
+    width: 120px;
+    min-height: 38px;
+    padding: 5px 8px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     border-radius: 2px;
     color: #111;
     font-family: Arial, sans-serif;
@@ -898,20 +918,19 @@ h2 {
 }
 
 .store-badge svg {
-    width: 28px;
-    height: 28px;
-    flex: 0 0 28px;
+    width: 22px;
+    height: 22px;
+    flex: 0 0 22px;
 }
 
 .store-badge span {
     display: flex;
     flex-direction: column;
     white-space: nowrap;
-    font-size: 13px;
 }
 
 .store-badge small {
-    font-size: 9px;
+    font-size: 8px;
 }
 
 .google-play {
@@ -935,13 +954,5 @@ h2 {
 
     .app-banner-copy p {
         margin-left: 0;
-    }
-
-    .store-links {
-        gap: 12px;
-    }
-
-    .store-badge {
-        padding: 8px;
     }
 }
